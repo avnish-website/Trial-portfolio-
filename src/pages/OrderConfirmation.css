@@ -1,0 +1,65 @@
+.avn-confirmation-card {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 40px 28px;
+  text-align: center;
+}
+
+.avn-confirmation-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 20px 0 24px;
+}
+
+.avn-confirmation-rows > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  border-bottom: 1px solid var(--avn-border);
+  padding-bottom: 10px;
+}
+
+.avn-confirmation-rows span {
+  color: var(--avn-muted);
+}
+
+.avn-confirmation-instruction {
+  font-size: 13.5px;
+  color: var(--avn-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.avn-confirmation-email {
+  background: var(--avn-bg-elevated);
+  border: 1px solid var(--avn-border);
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  font-family: var(--avn-font-display);
+  margin-bottom: 20px;
+}
+
+.avn-confirmation-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.avn-confirmation-actions .avn-btn {
+  flex: 1;
+}
+
+.avn-confirmation-startnew {
+  margin-top: 24px;
+  background: none;
+  border: none;
+  color: var(--avn-muted);
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.avn-confirmation-startnew:hover {
+  color: var(--avn-white);
+}

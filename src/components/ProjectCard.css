@@ -1,0 +1,115 @@
+.avn-project-card {
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.avn-project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--avn-border-strong);
+}
+
+.avn-project-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: 0;
+  border: 0;
+  background: rgba(22, 140, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Blurred copy of the media fills the gaps so vertical reels and posters
+   show in full (contain) without ugly empty bars. */
+.avn-project-cover-bg {
+  position: absolute;
+  inset: -24px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(24px) brightness(0.55) saturate(1.2);
+}
+
+.avn-project-media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.avn-project-play-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--avn-white);
+  background: rgba(5, 11, 24, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.avn-project-featured-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(5, 11, 24, 0.75);
+  border: 1px solid var(--avn-border);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--avn-cyan);
+}
+
+.avn-project-body {
+  padding: 20px;
+}
+
+.avn-project-category {
+  font-size: 12px;
+  color: var(--avn-cyan);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.avn-project-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.avn-project-desc {
+  color: var(--avn-muted);
+  font-size: 13.5px;
+  margin-top: 8px;
+}
+
+.avn-project-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--avn-cyan);
+}
+
+.avn-project-card-empty {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--avn-muted);
+  border-style: dashed;
+}
+
+.avn-project-empty-icon {
+  font-size: 22px;
+  color: var(--avn-border-strong);
+}

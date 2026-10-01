@@ -1,0 +1,26 @@
+.avn-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 20px 16px;
+  scrollbar-width: none;
+}
+
+.avn-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.avn-carousel > [role="listitem"] {
+  display: flex;
+}
+
+@media (min-width: 1080px) {
+  .avn-carousel {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 24px 16px;
+  }
+}

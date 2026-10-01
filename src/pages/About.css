@@ -1,0 +1,67 @@
+.avn-about-hero {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto var(--avn-space-8);
+}
+
+.avn-about-hero h1 {
+  font-size: clamp(28px, 6vw, 42px);
+}
+
+.avn-about-hero p {
+  color: var(--avn-muted);
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.avn-about-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.avn-about-focus-item {
+  padding: 18px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.avn-about-why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.avn-about-why-card {
+  padding: 26px 22px;
+}
+
+.avn-about-why-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.avn-about-why-card p {
+  color: var(--avn-muted);
+  font-size: 14px;
+}
+
+.avn-about-cta {
+  text-align: center;
+  padding: 48px 28px;
+}
+
+.avn-about-cta h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+@media (min-width: 700px) {
+  .avn-about-focus-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .avn-about-why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

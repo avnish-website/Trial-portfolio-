@@ -1,0 +1,69 @@
+.avn-hero {
+  text-align: center;
+  padding-top: var(--avn-space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avn-hero-title {
+  font-size: clamp(44px, 12vw, 84px);
+  font-weight: 700;
+  margin-top: var(--avn-space-4);
+  background: linear-gradient(90deg, var(--avn-white), var(--avn-sky));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.avn-hero-intro {
+  max-width: 520px;
+  margin-top: var(--avn-space-4);
+  color: var(--avn-muted);
+  font-size: 16.5px;
+}
+
+.avn-hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: var(--avn-space-6);
+}
+
+.avn-home-projects-grid,
+.avn-home-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.avn-home-services-cta {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.avn-home-cta-band {
+  text-align: center;
+  padding: 48px 28px;
+}
+
+.avn-home-cta-band h2 {
+  font-size: 26px;
+}
+
+.avn-home-cta-band p {
+  color: var(--avn-muted);
+  margin-top: 10px;
+}
+
+.avn-home-cta-band button {
+  margin-top: 22px;
+}
+
+@media (min-width: 700px) {
+  .avn-home-projects-grid,
+  .avn-home-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,35 @@
+.avn-entry-group {
+  padding: 0;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.avn-entry-group summary {
+  list-style: none;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.avn-entry-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.avn-entry-group summary svg {
+  color: var(--avn-muted);
+  transition: transform 0.2s ease;
+}
+
+.avn-entry-group[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.avn-entry-group-body {
+  padding: 4px 18px 18px;
+  border-top: 1px solid var(--avn-border);
+  padding-top: 16px;
+}

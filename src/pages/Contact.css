@@ -1,0 +1,48 @@
+.avn-contact-hero {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto 48px;
+}
+
+.avn-contact-hero h1 {
+  font-size: clamp(26px, 6vw, 38px);
+}
+
+.avn-contact-hero p {
+  color: var(--avn-muted);
+  margin-top: 14px;
+  font-size: 15.5px;
+}
+
+.avn-contact-card {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 32px 26px;
+  text-align: center;
+}
+
+.avn-contact-label {
+  display: block;
+  font-size: 12.5px;
+  color: var(--avn-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.avn-contact-email {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 6px;
+  font-family: var(--avn-font-display);
+}
+
+.avn-contact-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.avn-contact-actions .avn-btn {
+  flex: 1;
+}
